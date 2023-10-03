@@ -25,6 +25,7 @@ func main() {
 
 	mux.Handle("/", &homeHandler{})
 	mux.Handle("/recipes", recipesHandler)
+	mux.Handle("/recipes/", recipesHandler)
 
 	fmt.Println("Listening on :5000...")
 
